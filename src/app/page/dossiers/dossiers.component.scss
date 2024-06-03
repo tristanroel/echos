@@ -1,0 +1,55 @@
+// #dossier_component{
+//     border-radius: 10px;
+//     width: 100%;
+//     //background-color: blue;
+//     //border-top: 3px solid black;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content:space-between;
+//     //padding: 5px;
+//     h3{
+//         font-size: 15px;
+//     }
+//     img{
+//         border-radius: 10px;
+//         width: 100%;
+//         opacity: 0.8;
+//     }
+// }
+
+// .dossier{
+//     position: relative;
+//     width: 30.5%;
+//     text-align: justify;
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     height: 436px;
+//     //border: 3px solid black;
+//     border-radius: 10px;
+//     background-color: rgb(255, 255, 255);
+//     overflow-y: hidden;
+// }
+// .title_dossier{
+//     //width: 100%;
+//     color: rgb(74, 74, 74);
+//     padding: 10px;
+// }
+// .suite_txt{
+//     border-radius: 10px;
+//     padding: 10px;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     background-color: white;
+// }
+
+// @media only screen and (max-width: 1000px) {
+//     .dossier{
+//         width: 47%;
+//     }
+// }
+// @media only screen and (max-width: 705px) {
+//     .dossier{
+//     width: 100%;
+// }
+// }

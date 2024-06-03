@@ -1,0 +1,16 @@
+<div class="title_dossier"><h3>BILLETS</h3></div>
+<div id="dossier_component">
+    <div class="dossier" *ngFor="let item of articles">
+        <div class="e"></div>
+        <h2>{{item.title}}</h2>
+        <!-- <p>{{item.categorie}}</p> -->
+        <!-- <img src="{{returnUrl(item.image_link)}}" alt="" srcset=""> -->
+        <div class="img_dossier" [style.background-image]="'url('+ returnUrl(item.image_link) +')'"></div>
+
+        <div [innerHTML]="item.text | slice : 0 : 300"></div>
+        <div class="end_article">
+            <div class="suite_txt"><p>... suite</p></div>
+        </div>
+        <div class="article_overlay"></div>
+    </div>
+</div>

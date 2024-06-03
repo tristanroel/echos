@@ -1,0 +1,71 @@
+<div><h3>NOUVEAU SONDAGE</h3></div>
+<div class="create">
+    <!-- <form [formGroup]="sondageForm" (ngSubmit)="sondageSubmit()"> -->
+        <!-- <div>QUESTION</div>
+        <div>
+            <input type="text" id="question" formControlName="question" placeholder="Que pensez vous du nazisme ?"/>
+        </div>
+        <div>REPONSES</div> -->
+        <!-- <div>
+            <input type="text" id="question" formControlName="reponse" placeholder="C'étais pas si mal"/>
+            <input type="text" id="question" formControlName="reponse" placeholder="Plutot contre"/>
+            <input type="text" id="question" formControlName="reponse" placeholder="C'est une tragedie"/>
+            <input type="text" id="question" formControlName="reponse" placeholder="Fan de la D.A mais pas du Lore"/>
+            <input type="text" id="question" formControlName="reponse" placeholder="Je ne connais pas"/>
+            <input type="text" id="question" formControlName="reponse" placeholder="Ne se prononce pas"/>
+        </div> -->
+        <!-- <div class="center">
+            <button type="submit" [disabled]="sondageForm.invalid">PUBLIER</button>
+        </div> -->
+    <!-- </form> -->
+</div>
+<div><h3>NOUVEL ARTICLE</h3></div>
+<div class="create">
+    <form [formGroup]="articleForm" (ngSubmit)="articleSubmit()">
+        <div>CATEGORIE</div>
+        <div>
+            <select id="categorie" formControlName="categorie">
+                <option value="news">News</option>
+                <option value="dossier">Dossier</option>
+                <option value="billets">Billet</option>
+                <option value="lecture">Lecture</option>
+                <option value="ballade">Ballade</option>
+            </select>
+        </div>
+        <div>TITRE</div>
+        <div>
+            <input type="text" id="title" formControlName="title" placeholder="TITLE"/>
+        </div>
+        <div>IMAGE LINK</div>
+        <div>
+            <input type="text" id="image_link" formControlName="image_link" placeholder="www.blabla.de"/>
+        </div>
+        <div>TEXT</div>
+        <div>
+            <textarea type="text" id="text" formControlName="text" placeholder="TEXT"></textarea>
+        </div>
+        <div>HASHTAGS</div>
+        <div>
+            <input type="text" id="hashtags" formControlName="hashtags" placeholder="#forêt #verviers #écologie etc ..."/>
+        </div>
+        <div>AUTEUR</div>
+        <div>
+            <input type="text" id="auteur" formControlName="auteur" placeholder="Marcel Lechien"/>
+        </div>
+        <div>DATE</div>
+        <div>
+            <input type="date" id="date" formControlName="date" placeholder=""/>
+        </div>
+        <div class="center">
+            <button type="submit">PUBLIER</button>
+        </div>
+        <div class="helptext">?</div>
+        <div class="helptext_content">
+            <code>
+                "&lt;b&gt; <b>texte en gras</b> &lt;/b&gt;"<br>
+                "&lt;i&gt; <i>texte en italique</i> &lt;/i&gt;"<br>
+                "&lt;i&gt; <i>texte en italique</i> &lt;/i&gt;"<br>
+            </code>
+        </div>
+    </form>
+</div>

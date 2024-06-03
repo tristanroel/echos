@@ -1,0 +1,22 @@
+
+<div id="article_content">
+    <div id="ctn">
+        <div>
+            <div class="e"></div>
+            <h2>{{thisArticle!.title}}</h2>
+        </div>
+        <div>
+            <div class="img_title" [style.background-image]="'url('+ img_link+')'"></div>
+        </div>
+        <div [innerHTML]="thisArticle!.text">
+            <!-- <p>[innerHTML]= {{article_Exemple.text}}</p> -->
+        </div>
+        <div id="aut">
+            <div><b>{{thisArticle!.auteur}}</b></div>
+            <div><p>{{thisArticle!.date}}</p></div>
+        </div>
+        <div>
+            <button (click)="viewArticle(thisArticle!.id)">click</button>
+        </div>
+    </div>
+</div>
