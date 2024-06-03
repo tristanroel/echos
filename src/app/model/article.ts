@@ -7,5 +7,5 @@ export interface Article {
     date : string;
     auteur : string;
     hashtags : string;
-    //isPublish : boolean;
+    isPublish : boolean;
 }
