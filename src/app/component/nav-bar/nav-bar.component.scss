@@ -1,23 +1,38 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 *{margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-  font-weight: 500;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+//   font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
-  font-stretch: condensed;
+//   font-stretch: condensed;
   color: rgb(62, 62, 62);
 }
-    #title{
+#title{
     margin: auto;
-    width: 30%;
-    height: 100px;
-    background-image: url(logo_echos.png);
+    width: 100%;
+    // height: 140px;
+    // font-size: 30px;
+    // background-image: url(logo_echos2.png);
+    // background-color: antiquewhite;
     background-size:contain;
     background-repeat: no-repeat;
     z-index: 2;
+    margin-bottom: 10px;
     //border: 2px solid salmon;
+    h1{
+        // font-size: 80px;
+        font-size: 10vh;
+        font-weight: 600;
+
+    }
+    h2{
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
 // button{
 //     text-decoration: none;
@@ -33,7 +48,7 @@
     text-align: center;
 }
 #nav_wrap{
-    border-top: 3px solid rgb(33, 144, 114);
+    // border-top: 3px solid rgb(33, 144, 114);
     height: 50px;
     display: flex;
     //flex-wrap: wrap;
@@ -41,54 +56,68 @@
     justify-content:space-between;
     align-items: center;
     //background-color: antiquewhite;
+    
 }
 .nav_sections{
-    width: 12%;
+    // width: 15%;
     height: 100%;
-    //border-bottom: 3px solid rgb(33, 144, 114);
-    //background-color:blueviolet;
+    border: none;
+    background: none;
+    .nav_txt{
+        position: relative;
+        font-size: 20px;
+        padding: 0 10px;
+        letter-spacing: 2px;
+        vertical-align :auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        color: rgb(33, 144, 114);
+    }
+}
+.nav_sections:hover{
+    background-color: rgb(33, 144, 114);
+    .nav_txt{
+        color: rgb(255, 255, 255);
+    }
 }
 .search{
     border-radius: 10px;
-    width:45px;
-    height: 90%;
+    width:60px;
+    height: 100%;
     background-color: white(255, 205, 42);
     background-image: url(search96.png);
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .home{
-    border-radius: 10px;
-    width: 45px;
-    height: 90%;
-    background-color:white;
-    background-image: url(home96.png);
+    border: none;
+    width: 60px;
+    height: 100%;
+    background-color:rgb(33, 144, 114);
+    background-image: url(echologo1.png);
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav_txt{
-    //height: 100%;
-    position: relative;
-    margin-top: 15px;
-    vertical-align :auto;
-    font-weight: 600;
-    //background-color: aqua;
-    color: rgb(97, 97, 97);
+    background-size: contain;
 }
 
-#anim{
+// #anim{
     //position: absolute;
-    top: 0;
-    z-index: -1;
-    right: 0;
-    width: 70%;
-    height: 100px;
-    background-image: url(trees.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    // top: 0;
+    // z-index: -1;
+    // right: 0;
+    // width: 70%;
+    // height: 100px;
+    //background-image: url(trees.png);
+    //background-size: cover;
+    //background-repeat: no-repeat;
+
     //background-color:brown;
     //object-position: 140px 10px;
-}
+// }
 
 .trees{
     position: absolute;
@@ -102,7 +131,12 @@
 @media only screen and (max-width: 1000px) {
     #title{
         width: 100%;
-        height: 70px;
+        h1{
+            font-size: 8vh;
+        }
+        h2{
+            font-size: 14px;
+        }
     }
     #anim{height: 70px;}
     #nav_wrap{
@@ -110,7 +144,9 @@
         width: 100%;
         overflow-x: scroll;
     }
-    .nav_sections{min-width: 140px;}
+    // .nav_sections{
+    //     .nav_txt{padding: 0px;}
+    // }
     .home{min-width: 50px;}
     .search{min-width: 50px;}
 }

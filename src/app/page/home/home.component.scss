@@ -8,7 +8,7 @@
     //margin: auto;
 }
 .home_component2{
-    border-radius: 10px;
+    // border-radius: 10px;
     margin-top: 10px;
     //background-color: rgb(84, 181, 155);
     background-color: rgb(233, 233, 233);
@@ -34,18 +34,18 @@
 .wrapR{
     width: 30%;
     display: flex;
-    //background-color: antiquewhite;
+    background-color: rgb(33, 144, 114);
     flex-direction: column;
 }
-#infohome{
-    margin: 0 8px;
-   // width: 100%;
-    border-radius: 10px;
-    background-color: rgb(240, 214, 108);
-    min-height: 100px;
-    height:100%;
-    flex-grow: 1;
-}
+// #infohome{
+//     // margin: 0 8px;
+//    // width: 100%;
+//     // border-radius: 10px;
+//     // background-color: rgb(240, 214, 108);
+//     min-height: 100px;
+//     height:100%;
+//     flex-grow: 1;
+// }
 app-sondages{
     flex-grow: 1;
 }
@@ -67,6 +67,7 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 9%, rgba(255,255,255,0.8
 @media only screen and (max-width: 700px) {
     .wrapL{
         width: 100%;
+        margin: 10px 0;
     }
     .wrapR{
         width: 100%;

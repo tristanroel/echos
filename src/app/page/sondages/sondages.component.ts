@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SondagesComponent {
 
+  ClickSondage(){
+    // console.log("clickResult +"+ indexResult);
+    console.log("clickResult ");
+    
+  }
 }

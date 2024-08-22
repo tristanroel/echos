@@ -6,8 +6,9 @@
     background-position: center;
 
     margin: 20px 0px;
-    border-radius: 10px;
+    // border-radius: 10px;
 }
+
 #article_content{
     margin: 20px 0px;
     display: flex;
@@ -16,6 +17,10 @@
     #ctn{
         width: 700px;
         //background-color: aqua;
+        h2{
+            font-weight: 800;
+            // background-color: aqua;
+        }
     }
 }
 #aut{

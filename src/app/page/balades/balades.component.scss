@@ -1,16 +1,16 @@
 .balade_content{
     position: relative;
     display: flex;
-    border-radius: 10px;
+    // border-radius: 10px;
     justify-content: center;
-    margin: 10px 7px;
+    margin: 5px;
     //background-color: rgb(33, 144, 114);
     align-items: center;
     align-content: center;
     
 }
 .map{
-    border-radius: 10px;
+    // border-radius: 10px;
     width: 100%;
     height: 340px;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e2/Belgium_relief_location_map.jpg");
@@ -23,7 +23,7 @@
     //background-color: aqua;
 }
 .mapoverlay{
-    border-radius: 10px;
+    // border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
